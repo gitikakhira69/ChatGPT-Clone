@@ -1,0 +1,1702 @@
+/*Webpage*/
+body {
+    /*ChatGPT:rgb(52, 53, 65)
+    background-color: #121212;
+    /*ChatGPT:not available
+    color: #fff;*/
+    background-color :rgb(52, 53, 65);
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-style :solid;
+    border-top-width :0px;
+    box-sizing :border-box;
+    color-scheme: dark;
+    display: block;
+    height :955px;
+    line-height :24px;
+    margin-bottom :0px;
+    margin-left: 0px;
+    margin-right :0px;
+    margin-top :0px;
+}
+
+.container {
+    /*ChatGPT : same*/
+    display: flex;
+    justify-content: flex-end;
+    /*ChatGPT : height 300.5px*/
+    
+    height: 100vh;
+}
+.hide-button{
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-bottom-left-radius :6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgba(255, 255, 255, 0.2);
+    border-left-style :solid;
+    border-left-width :1px;
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color :rgba(255, 255, 255, 0.2);
+    border-top-left-radius :6px;
+    border-top-right-radius: 6px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color :rgb(255, 255, 255);
+    color-scheme: dark;
+    position: relative;
+    cursor: pointer;
+}
+.left-pane {
+    /*ChatGPT : 260px*/
+    width: 15%;
+    /*ChatGPT : not available*/
+    background-color: rgb(32, 33, 35);
+    /*ChatGPT : not available*/
+    padding: 15px;
+    /*ChatGPT : not availabli*/
+   overflow-y: auto;
+    
+}
+/*To give a chat*/
+.new-chat-button {
+    /*ChatGPT : same
+    display: flex;
+    /*ChatGPT : not available
+    justify-content: space-between;
+    /*ChatGPT : same
+    align-items: center;
+    /*ChatGPT : not available
+    margin-bottom: 10px;*/
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-bottom-left-radius :6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgba(255, 255, 255, 0.2);
+    border-left-style :solid;
+    border-left-width :1px;
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color :rgba(255, 255, 255, 0.2);
+    border-top-left-radius :6px;
+    border-top-right-radius: 6px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color :rgb(255, 255, 255);
+    color-scheme: dark;
+    column-gap: 12px;
+    cursor :pointer;
+    display :flex;
+    flex-grow: 1;
+    height :44px;
+    padding-bottom :4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    row-gap :12px;
+    width: 192px;
+}
+
+
+
+.right-pane {
+    /*ChatGPT : 544px 
+    width: 75%;*/
+    /*ChatGPT : same
+    position: relative;*/
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-style :solid;
+    border-bottom-width :0px;
+    border-image-outset :0;
+    border-image-repeat :stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(217, 217, 227);
+    border-top-style: solid;
+    border-top-width: 0px;
+    box-sizing :border-box;
+    color-scheme: dark;
+    
+    flex-basis: 0%;
+    flex-grow :1;
+    flex-shrink: 1;
+    height :955px;
+    line-height :24px;
+    max-width :100%;
+    overflow-x :hidden;
+    overflow-y :hidden;
+    position :relative;
+    tab-size :4;
+    text-size-adjust :100%;
+    width :775px;
+    background-color: rgb(52, 53, 65);
+}
+
+/* Input box at the bottom right section*/
+.bottom-input {
+    /* CHatGPT : relative
+    position: absolute;
+    /* CHatGPT : not available
+    bottom: 20px;
+    /* CHatGPT : not available
+    left: 0;*/
+    /* CHatGPT : not available
+    right: 0;
+    /* CHatGPT : same
+    display: flex;
+    /* CHatGPT : not available
+    justify-content: space-between;
+    /* CHatGPT : not available
+    align-items: center;*/
+    /* CHatGPT : padding-bottom 16px
+        padding-left 16px
+        padding-top 16px
+    padding: 10px;*/
+    /* CHatGPT : rgb(64, 65, 79)*/
+    background-color: rgb(64, 65, 79);
+    align-items: center;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgba(0, 0, 0, 0);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgba(0, 0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 0px;
+    box-sizing :border-box;
+    color-scheme: dark;
+    display :flex;
+    height: 58px;
+    line-height: 24px;
+    tab-size: 6;
+    text-size-adjust :100%;
+    width :48%;
+    position: absolute;
+    bottom: 30px;
+    margin-left: 29%;
+    
+    border-radius: 10px;
+}
+
+.message-input {
+    /* CHatGPT : 130px*/
+    width: 95%;
+    /* CHatGPT : same
+    padding: 10px;*/
+    /* CHatGPT : 
+    border: none;*/
+    /* CHatGPT : rgb(68, 68, 68)
+    background-color: #333;*/
+   /* CHatGPT : rgb(255, 255, 255)*/
+
+    appearance :none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-color :rgba(0, 0, 0, 0);
+    border-bottom-left-radius :0px;
+    border-bottom-right-radius :0px;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(142, 142, 160);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(142, 142, 160);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(142, 142, 160);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style :solid;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    color-scheme: dark;
+    cursor: text;
+    display :block;
+    height: 56px;
+    letter-spacing :normal;
+    line-height: 24px;
+    margin-bottom: 0px;
+    margin-left :0px;
+    margin-right: 0px;
+    margin-top :0px;
+    max-height: 200px;
+    overflow-wrap :break-word;
+    overflow-y: auto;
+    padding-bottom :16px;
+    padding-left: 16px;
+    padding-right :48px;
+    padding-top: 16px;
+    resize :none;
+    width: 670px;
+    outline: 2px solid rgb(64, 65, 79);
+    border-radius: 10px;
+}
+/*Send button to send the message in the middle container*/
+.send-button {
+    /* CHatGPT : 16px*/
+    width: 32px;
+    height: 32px;
+    /* CHatGPT : not available*/
+    background-color: #007bff;
+    /* CHatGPT : rgb(172, 172, 190)*/
+    color: rgb(172, 172, 190);
+    /* CHatGPT : 0px solid rgb(217, 217, 227
+    border: none;*/
+    /* CHatGPT : default*/
+    cursor: pointer;
+    
+    /*padding-bottom :8px;
+    padding-left :8px;
+    padding-right: 8px;
+    padding-top: 8px;*/
+    position :absolute;
+    right: 19px;
+    align-items: flex-start;
+    appearance :button;
+    background-color :rgba(0, 0, 0, 0);
+    background-image: none;
+    border-bottom-color: rgb(217, 217, 227);;
+    border-bottom-left-radius :6px;
+    border-bottom-right-radius :6px;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(217, 217, 227);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top-style: solid;
+    border-top-width: 0px;
+    bottom: 18px;
+    display: block;
+    box-sizing: border-box;
+    
+}
+/*2 buttons at the top and send button*/
+
+
+/* Change button colors on hover */
+
+
+
+.fa {
+    margin-right: 5px; 
+    font-size: 16px;
+}
+
+.top-buttons {
+    /*ChatGPT:same*/
+    display: flex;
+    /*ChatGPT:not available
+    justify-content: flex-end; */
+    /*ChatGPT:0px
+    padding: 10px;*/
+    /*ChatGPT:not available
+    background-color: #222;*/
+    /*ChatGPT:not available*/
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color :rgb(32, 33, 35);
+    border-bottom-color :rgb(217, 217, 227);
+    border-bottom-left-radius :12px;
+    border-bottom-right-radius :12px;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-left-radius :12px;
+    border-top-right-radius: 12px;
+    border-top-style: solid;
+    border-top-width :0px;
+    box-sizing :border-box;
+    color :rgb(32, 33, 35);
+    color-scheme :dark;
+    height :50px;
+    padding:4px 1px;
+    flex-flow: row-reverse;
+    width: 350px;
+    justify-content: flex-end;
+    margin-left: 650px;
+    margin-top: 30px;
+}
+.chatgpt-name{
+    display: flex;
+    font-family :Poppins;
+    font-size :36px;
+    font-weight: 600;
+    height: 60px;
+    flex-direction: row;
+    justify-content: center;
+    width :156px;
+    padding: 5%;
+    margin-left: 47%;
+    border-bottom-color :rgb(217, 217, 227);
+    border-bottom-style :solid;
+    border-bottom-width :0px;
+    border-image-outset :0;
+    border-image-repeat :stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color :rgb(217, 217, 227);
+    border-right-style :solid;
+    border-right-width :0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-style :solid;
+    border-top-width :0px;
+    box-sizing: border-box;
+    color: rgb(86, 88, 105);
+    color-scheme :dark;
+}
+.floating-button {
+
+    /*ChatGPT:rgb(217, 217, 227)
+    height 42px
+    width 148px
+    background-color: #464849;
+    /*ChatGPT:rgb(236, 236, 241)
+    color: white;
+    border: none;
+    /*ChatGPT : 10px 10px
+    padding: 10px 20px;
+    /*ChatGPT : not available
+    margin-left: 10px;  
+    /*ChatGPT : 8px
+    border-radius: 5px;*/
+    /*ChatGPT : same
+    cursor: pointer;*/
+    /*ChatGPT : transition-duration 0.1s
+transition-property opacity
+transition-timing-function cubic-bezier(0.4, 0, 0.2, 1)
+    transition: background-color 0.3s, color 0.3s;*/
+    align-items: center;
+    background-color :rgb(64, 65, 79);
+    border-bottom-color :rgb(78, 79, 96);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius :8px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(78, 79, 96);
+    border-left-style :solid;
+    border-left-width :1px;
+    border-right-color: rgb(78, 79, 96);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color :rgb(78, 79, 96);
+    border-top-left-radius :8px;
+    border-top-right-radius :8px;
+    border-top-style :solid;
+    border-top-width :1px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 1px 7px 0px;
+    box-sizing: border-box;
+    opacity: 1; /* Set initial opacity to 1 */
+    transition: opacity 0.3s; 
+    color-scheme: dark;
+    column-gap: 1px;
+    cursor :pointer;
+    display: flex;
+    height :42px;
+    justify-content :center;
+    outline-color: rgba(0, 0, 0, 0);
+    outline-offset: 2px;
+    outline-style :solid;
+    outline-width: 2px;
+    padding-bottom :10px;
+    padding-top :10px;
+    padding-right: 15px;
+    position :relative;
+    transition-duration: 0.1s;
+    transition-property :opacity;
+    transition-timing-function :cubic-bezier(0.4, 0, 0.2, 1);
+    width :70%;
+    margin-right: 15px;
+    margin-left: 5px;
+    flex-direction: row;
+}
+.today{
+    background-color: rgb(32, 33, 35);
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(217, 217, 227);
+    border-top-style: solid;
+    border-top-width: 0px;
+    box-sizing :border-box;
+    color :rgb(142, 142, 160);
+    color-scheme: dark;
+    display: block;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-size: 12px;
+    font-variation-settings: normal;
+    font-weight: 500;
+    height: 36px;
+    line-height :16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    overflow-x :hidden;
+    overflow-y :hidden;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top :12px;
+    tab-size: 4;
+    text-overflow :ellipsis;
+    text-size-adjust: 100%;
+    width: 244px;
+}
+.thun{
+    padding-right: 20px;
+}
+#button2{
+    color: #e3dfdf;
+    font-weight: bolder;
+}
+#button2:hover{
+    color: #fff;
+}
+.lock{
+    padding-left: 10px;
+}
+#float:hover{
+    color: #fff;
+}
+#float{
+    background-color :rgb(32, 33, 35);
+    border-color: rgb(32, 33, 35);
+    color: #a9a8a8;
+    font-weight: bolder;
+}
+.existing-chats img {
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-style :solid;
+    border-top-width :0px;
+    box-sizing :border-box;
+    color :rgb(236, 236, 241);
+    color-scheme :dark;
+    cursor: pointer;
+    display :block;
+    fill: none;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-size :14px;
+    font-variation-settings: normal;
+    height: 16px;
+    line-height :20px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type :none;
+    overflow-clip-margin: content-box;
+    stroke :rgb(236, 236, 241);
+    stroke-linecap :round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    tab-size: 4;
+    text-align: left;
+    text-size-adjust :100%;
+    vertical-align: middle;
+    width :18px;
+    word-break: break-all;
+    -webkit-font-smoothing :antialiased;
+}
+.chat {
+    /*ChatGPT : 12px 
+    width 244px
+    height 44px*/
+    padding: 10px;
+    /*ChatGPT : not available*/
+    margin: 5px 0;
+    /*ChatGPT : same*/
+    cursor: pointer;
+    /*ChatGPT : rgb(32, 33, 35)*/
+    background-color: rgb(32, 33, 35);
+    /*ChatGPT : 6px*/
+    border-radius: 5px;
+    /*ChatGPT : not available*/
+    transition: background-color 0.3s, color 0.3s;
+    width: 265px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    font-size: 15px;
+}
+.chat img{
+    width: 20px;
+    height: 20px;
+}
+
+.chat:hover {
+    /*ChatGPT : */
+    background-color: rgb(52, 53, 65); 
+    /*ChatGPT : rgb(236, 236, 241)*/
+    opacity: 0.1px; 
+}
+
+
+.new-chat-input-container{
+    display: flex;
+    flex-direction: row;
+    row-gap: 8px;
+    column-gap: 10px;
+}
+.message-area{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    
+   padding-left: 50px;
+   font-size: 25px;
+   border-bottom-color: rgb(217, 217, 227);
+   border-bottom-style: solid;
+   border-bottom-width: 0px;
+   border-image-outset: 0;
+   border-image-repeat: stretch;
+   border-image-slice :100%;
+   border-image-source: none;
+   border-image-width :1;
+   border-left-color :rgb(217, 217, 227);
+   border-left-style :solid;
+   border-left-width :0px;
+   border-right-color: rgb(217, 217, 227);
+   border-right-style: solid;
+   border-right-width: 0px;
+   border-top-color :rgb(217, 217, 227);
+   border-top-style :solid;
+   border-top-width :0px;
+   box-sizing: border-box;
+   color :rgb(236, 236, 241);
+   color-scheme :dark;
+   column-gap :24px;
+   display :flex;
+   font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-feature-settings :normal;
+   font-size: 16px;
+   font-variation-settings: normal;
+   height :96px;
+   justify-content :center;
+   line-height: 24px;
+   margin:0px;
+   padding-bottom :24px;
+   padding-left: 16px;
+   padding-right: 16px;
+   padding-top :24px;
+   row-gap :24px;
+   tab-size: 4;
+   text-size-adjust :100%;
+   width: 100%;
+   -webkit-font-smoothing: antialiased;
+   padding-left: 30%;
+}
+/* Profile section styling */
+.profile-section {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color :rgba(255, 255, 255, 0.2);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color-scheme: dark;
+    margin: 5px 0px;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    height: 120px;
+    line-height: 24px;
+    padding-top :8px;
+    tab-size: 4;
+    text-size-adjust :100%;
+    width :290px;
+    -webkit-font-smoothing: antialiased;
+    position:absolute;
+    bottom: 0px;
+    background-color: rgb(32, 33, 35);
+}
+.upgrade{
+   
+    /*ChatGPT : not available*/
+    margin: 5px 0;
+    /*ChatGPT : same*/
+    cursor: pointer;
+    /*ChatGPT : rgb(32, 33, 35)*/
+    background-color: rgb(32, 33, 35);
+    /*ChatGPT : 6px*/
+    border-radius: 5px;
+    /*ChatGPT : not available
+    transition: background-color 0.3s, color 0.3s;
+    width: 265px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    font-size: 15px;*/
+    align-items: center;
+    border-bottom-color :rgb(217, 217, 227);
+    border-bottom-left-radius :6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-left-radius :6px;
+    border-top-right-radius: 6px;
+    border-top-style: solid;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color :rgb(255, 255, 255);
+    color-scheme: dark;
+    column-gap :12px;
+    cursor :pointer;
+    display: flex;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings :normal;
+    font-size: 14px;
+    font-variation-settings: normal;
+    height :44px;
+    line-height: 20px;
+    min-height: 44px;
+    padding-bottom :4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    row-gap: 12px;
+    tab-size: 4;
+    text-decoration-color :rgb(255, 255, 255);
+    text-decoration-line :none;
+    text-decoration-style :solid;
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+    transition-duration: 0.2s;
+    transition-property :color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    width: 290px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.upgrade:hover{
+    background-color: rgb(52, 53, 65); 
+    /*ChatGPT : rgb(236, 236, 241)*/
+    opacity: 0.1px; 
+}
+.username:hover{
+    background-color:rgb(52, 53, 65) ;
+}
+.username{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    appearance: button;
+    background-color: rgb(32, 33, 35);
+    background-image :none;
+    border-bottom-color :rgb(217, 217, 227);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-left-radius :6px;
+    border-top-right-radius: 6px;
+    border-top-style :solid;
+    border-top-width :0px;
+    box-sizing :border-box;
+    color :rgb(255, 255, 255);
+    color-scheme :dark;
+    column-gap :12px;
+    cursor :afterpointer;
+    display: flex;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings :normal;
+    font-kerning :auto;
+    font-optical-sizing: auto;
+    font-size :14px;
+    font-stretch :100%;
+    font-style :normal;
+    font-variant-alternates: normal;
+    font-variant-caps :normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures :normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    height: 56px;
+    letter-spacing: normal;
+    line-height: 20px;
+    margin:0px;
+    padding-block-end :12px;
+    padding:12px;
+    row-gap: 12px;
+    tab-size: 4;
+    text-align: center;
+    text-indent :0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust :100%;
+    text-transform :none;
+    transition-duration: 0.2s;
+    transition-property :color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function :cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: visible;
+    width :290px;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-font-smoothing: antialiased;
+}
+/* Profile image styling */
+.profile-image {
+    /*width: 50px;  Adjust the size as needed 
+    height: 50px; /* Adjust the size as needed 
+    border-radius: 50%;
+    margin: 0 auto;  Center the image horizontally 
+    display: block;*/
+    aspect-ratio :auto 32 / 32;
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-left-radius :2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width:1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-top-style: solid;
+    border-top-width :0px;
+    box-sizing: border-box;
+    color :rgba(0, 0, 0, 0);
+    color-scheme :dark;
+    cursor: pointer;
+    display: block;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-kerning :auto;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-stretch :100%;
+    font-style :normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures :normal;
+    font-variant-numeric :normal;
+    font-variant-position: normal;
+    font-variation-settings :normal;
+    font-weight: 400;
+    height: 32px;
+    letter-spacing: normal;
+    line-height: 20px;
+    max-width :100%;
+    overflow-clip-margin: content-box;
+    overflow-x :clip;
+    overflow-y :clip;
+    tab-size: 4;
+    text-align: center;
+    text-indent :0px;
+    text-rendering :auto;
+    text-shadow: none;
+    text-size-adjust :100%;
+    text-transform :none;
+    vertical-align: middle;
+    width: 32px;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-font-smoothing :antialiased;
+}
+
+/* Profile name styling */
+.profile-name {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-top: 10px;
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(217, 217, 227);
+    border-top-style: solid;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color :rgb(255, 255, 255);
+    color-scheme :dark;
+    cursor :pointer;
+    display: block;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings :normal;
+    font-kerning :auto;
+    font-optical-sizing :auto;
+    font-size :14px;
+    font-stretch :100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures :normal;
+    font-variant-numeric: normal;
+    font-variant-position :normal;
+    font-variation-settings :normal;
+    font-weight :600;
+    height: 20px;
+    letter-spacing: normal;
+    line-height :20px;
+    tab-size :4;
+    text-align :left;
+    text-indent :0px;
+    text-rendering :auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    text-wrap :nowrap;
+    visibility :visible;
+    white-space-collapse :collapse;
+    width: 148px;
+    word-spacing: 0px;
+    writing-mode :horizontal-tb;
+    -webkit-font-smoothing :antialiased;
+}
+
+.site {
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-style :solid;
+    border-top-width :0px;
+    box-sizing :border-box;
+    color :rgb(197, 197, 210);
+    color-scheme: dark;
+    position:static;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings :normal;
+    font-size :12px;
+    font-variation-settings: normal;
+    height :auto;
+    line-height :16px;
+    tab-size: 4;
+    text-align: center;
+    text-size-adjust :100%;
+    width :auto;
+    -webkit-font-smoothing :antialiased;
+    margin-top: 6%;
+    margin-left: 6%;
+   
+}
+.site a{
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(217, 217, 227);
+    border-top-style: solid;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color :rgb(197, 197, 210);
+    color-scheme: dark;
+    cursor: pointer;
+    display :inline;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings :normal;
+    font-size: 12px;
+    font-variation-settings :normal;
+    height: auto;
+    line-height: 16px;
+    tab-size: 4;
+    text-align :center;
+    text-decoration-color :rgb(197, 197, 210);
+    text-decoration-line :underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-font-smoothing :antialiased;
+}
+
+/* Style for the tooltip text */
+.tooltip-text {
+    visibility: hidden;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 2;
+    top: 30px; /* Position above the button */
+    left: 50%;
+    transform: translateX(-10%);
+    transform: translateY(40%);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    width: 100px;
+    margin: 10px;
+}
+
+/* Show the tooltip text on hover */
+.send-button-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Style for the hide button at the top left */
+
+/* Create the tooltip for hide button */
+.hide-button::before {
+    content: "Close Sidebar";
+    position: absolute;
+    top: 50px; /* Adjust the distance from the button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1;
+}
+
+/* Show the tooltip on hover */
+.hide-button:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+#hideButtonTop{
+    align-items: center;
+    appearance :button;
+    background-color: rgb(52, 53, 65);
+    background-image: none;
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-left-radius :6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-style :solid;
+    border-bottom-width :0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source:none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top-style :solid;
+    border-top-width :0px;
+    box-sizing :border-box;
+    color :rgb(217, 217, 227);
+    color-scheme: dark;
+    column-gap :12px;
+    cursor: pointer;
+    display :none;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings : normal;
+    font-kerning :auto;
+    font-optical-sizing :auto;
+    font-size :14px;
+    font-stretch :100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps :normal;
+    font-variant-east-asian :normal;
+    font-variant-ligatures :normal;
+    font-variant-numeric :normal;
+    font-variant-position: normal;
+    font-variation-settings :normal;
+    font-weight: 400;
+    height :44px;
+    letter-spacing :normal;
+    line-height: 20px;
+    margin:0px;
+    padding:12px;
+    row-gap :12px;
+    tab-size: 4;
+    text-align :center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow :none;
+    text-size-adjust :100%;
+    text-transform :none;
+    transition-duration :0.2s;
+    transition-property :color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function :cubic-bezier(0.4, 0, 0.2, 1);
+    width :45px;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-font-smoothing: antialiased;
+}
+#hideButtonTop:hover {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgb(84, 86, 104);
+    border-radius: 5px;
+    margin: 3px;
+}
+.message-container {
+    display: flex;
+    
+    padding: 10px;
+    column-gap: 10px;
+    color: #fff;
+    
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adjust alignment as needed */
+}
+
+.message-box {
+
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(217, 217, 227);
+    border-top-style: solid;
+    border-top-width: 0px;
+    box-sizing :border-box;
+    color-scheme :dark;
+    column-gap :12px;
+    display: flex;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings :normal;
+    grid-auto-flow :row;
+    grid-template-columns :322px 322px;
+    height: 128px;
+    line-height :24px;
+    row-gap :12px;
+    tab-size: 4;
+    text-size-adjust :100%;
+    width: 656px;
+    -webkit-font-smoothing: antialiased;
+    justify-content: center;
+    margin-left: 100%;
+}
+
+.left-column {
+
+    color-scheme :dark;
+    column-gap :12px;
+    display :flex;
+    flex-direction :column;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    height :128px;
+    line-height: 24px;
+    row-gap :12px;
+    tab-size: 4;
+    text-size-adjust :100%;
+    width :322px;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 23%;
+    margin-left: 22%;
+}
+
+.right-column {
+    
+    color-scheme :dark;
+    column-gap :12px;
+    display :flex;
+    flex-direction :column;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    height :128px;
+    line-height: 24px;
+    row-gap :12px;
+    tab-size: 4;
+    text-size-adjust :100%;
+    width :322px;
+    margin-top: 23%;
+    -webkit-font-smoothing: antialiased;
+}
+.message-box {
+    border-bottom-color: rgb(86, 88, 105);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(86, 88, 105);
+    border-left-style :solid;
+    border-left-width :1px;
+    border-right-color: rgb(86, 88, 105);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(86, 88, 105);
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing :border-box;
+    color-scheme: dark;
+    column-gap: 12px;
+    display :flex;
+    flex-direction: column;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings :normal;
+    font-variation-settings: normal;
+    height: 128px;
+    line-height: 24px;
+    row-gap :12px;
+    tab-size: 4;
+    text-size-adjust :100%;
+    width :322px;
+    -webkit-font-smoothing :antialiased;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(197, 197, 210);
+    font-weight: 600px;
+}
+.message-box:hover {
+   background-color: rgb(86, 88, 105);
+}
+.left-box:hover{
+    background-color: rgb(86, 88, 105);
+}
+.reload{
+    align-items: center;
+    appearance :button;
+    background-color: rgb(52, 53, 65);
+    background-image :none;
+    border-bottom-color: rgb(86, 88, 105);
+    border-bottom-left-radius :4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(86, 88, 105);
+    border-left-style :solid;
+    border-left-width :1px;
+    border-right-color: rgb(86, 88, 105);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(86, 88, 105);
+    border-top-left-radius :4px;
+    border-top-right-radius :4px;
+    border-top-style :solid;
+    border-top-width :1px;
+    box-sizing :border-box;
+    color :rgb(217, 217, 227);
+    color-scheme: dark;
+    cursor: pointer;
+   
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings :normal;
+    font-kerning :auto;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    font-stretch :100%;
+    font-style: normal;
+    font-variant-alternates :normal;
+    font-variant-caps :normal;
+    font-variant-east-asian :normal;
+    font-variant-ligatures :normal;
+    font-variant-numeric :normal;
+    font-variant-position: normal;
+    font-variation-settings :normal;
+    font-weight :400;
+    height :38px;
+    letter-spacing :normal;
+    line-height :20px;
+    margin:0px;
+    padding-bottom: 8px;
+    padding-left :12px;
+    padding-right :12px;
+    padding-top :8px;
+    pointer-events :auto;
+    position :relative;
+    tab-size: 4;
+    text-align :center;
+    text-indent :0px;
+    text-rendering :auto;
+    text-shadow :none;
+    text-size-adjust :100%;
+    text-transform :none;
+    text-wrap :nowrap;
+    white-space-collapse :collapse;
+    width: 118.484px;
+    word-spacing :0px;
+    writing-mode :horizontal-tb;
+    z-index: 0;
+    -webkit-font-smoothing :antialiased;
+    margin-top: 30%;
+    margin-left: 69%;
+    
+}
+.reload img{
+    padding-right: 10px;
+}
+
+.share{
+    margin-right: 20px;
+    margin-top: 15px;
+    padding: 5px;
+    appearance :button;
+    background-color: rgb(52, 53, 65);
+    background-image :none;
+    border-bottom-color: rgb(52, 53, 65);
+    border-bottom-left-radius :4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(52, 53, 65);
+    border-left-style :solid;
+    border-left-width :1px;
+    border-right-color: rgb(52, 53, 65);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(52, 53, 65);
+    border-top-left-radius :4px;
+    border-top-right-radius :4px;
+    border-top-style :solid;
+    border-top-width :1px;
+    box-sizing :border-box;
+}
+.share:hover{
+    background-color: rgb(86, 88, 105);
+}
+.question-icon{
+    background-color:rgb(52, 53, 65) ;
+    border: none;
+}
+.question-icon img{
+    height: 23px;
+    width: 23px;
+    background-color:rgb(52, 53, 65) ;
+    border-bottom-color: rgb(80, 81, 99);
+    border-bottom-left-radius :4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(80, 81, 99);
+    border-left-style :solid;
+    border-left-width :1px;
+    border-right-color: rgb(80, 81, 99);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(80, 81, 99);
+    border-top-left-radius :4px;
+    border-top-right-radius :4px;
+    border-top-style :solid;
+    border-top-width :1px;
+    border-radius: 15px;
+    margin-top: 64em;
+    margin-left: 20%;
+    
+}
+
+.options-icon {
+    
+    color: #fff;
+    border: none;
+    padding-left: 20px;
+    padding-bottom: 37px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-color: rgb(217, 217, 227);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-style :solid;
+    border-top-width :0px;
+    box-sizing :border-box;
+    color :rgb(142, 142, 160);
+    color-scheme :dark;
+    cursor: pointer;
+    display :block;
+    fill :none;
+    flex-shrink: 0;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings :normal;
+    font-kerning :auto;
+    font-optical-sizing: auto;
+    font-size :30px;
+    font-stretch :100%;
+    font-style :normal;
+    font-variant-alternates :normal;
+    font-variant-caps :normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures :normal;
+    font-variant-numeric :normal;
+    font-variant-position :normal;
+    font-variation-settings: normal;
+    font-weight :400;
+    height :16px;
+
+    overflow-clip-margin :content-box;
+    stroke :rgb(142, 142, 160);
+    stroke-linecap: round;
+    stroke-linejoin :round;
+    stroke-width: 2px;
+    tab-size :4;
+    text-align :center;
+    text-indent :0px;
+    text-rendering :auto;
+    text-shadow :none;
+    text-size-adjust: 100%;
+    text-transform :none;
+    vertical-align: middle;
+    width :16px;
+
+}
+.options-icon:hover{
+    background-color: rgb(52, 53, 65)
+}
+.options-button{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+/* Style for the dropdown container */
+
+.dropdown {
+    position: absolute;
+    right:30px;
+    background-color: #0b0b0b;
+    border: 1px solid #0b0b0b;
+    border-radius: 5px;
+    display: none; /* Initially hide the dropdown */
+    flex-direction: column;
+    z-index: 1;
+    bottom:49px;
+    color: #fff;
+    width: 150px;
+}
+
+.menu-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* Show the dropdown menu on hover of the question mark button */
+.menu-container:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for dropdown menu items on hover */
+.menu-item:hover {
+    background-color: rgb(80, 81, 99);
+}
+.menu-item a{
+    text-decoration: none;
+    color: #fff;
+}
+.options {
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: none; /* Initially hide the menu */
+    flex-direction: column;
+    z-index: 1;
+    color: #fff;
+}
+
+/* Style for each menu item */
+.item-opt {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    align-items :center;
+    border-bottom-color :rgb(217, 217, 227);
+    border-bottom-style :solid;
+    border-bottom-width :0px;
+    border-image-outset :0;
+    border-image-repeat :stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width :1;
+    border-left-color :rgb(217, 217, 227);
+    border-left-style :solid;
+    border-left-width :0px;
+    border-right-color: rgb(217, 217, 227);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color :rgb(217, 217, 227);
+    border-top-style :solid;
+    border-top-width :0px;
+    box-sizing :border-box;
+    color :rgb(255, 255, 255);
+    color-scheme :dark;
+    column-gap :12px;
+    cursor :pointer;
+    display :flex;
+    font-family :Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings :normal;
+    font-size :14px;
+    font-variation-settings :normal;
+    height :44px;
+    line-height :20px;
+    min-height :44px;
+    padding-bottom :4px;
+    padding-left :12px;
+    padding-right :12px;
+    padding-top: 4px;
+    row-gap :12px;
+    tab-size :4;
+    text-decoration-color :rgb(255, 255, 255);
+    text-decoration-line :none;
+    text-decoration-style :solid;
+    text-decoration-thickness :auto;
+    text-size-adjust :100%;
+    transition-duration :0.2s;
+    transition-property :color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function :cubic-bezier(0.4, 0, 0.2, 1);
+    width :244px;
+
+}
+#log{
+    border-top: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom: #000;
+    border-left: #000;
+    border-right: #000;
+    
+    
+}
+.item-opt img{
+    padding-right: 10px;
+    padding-top: 5px;
+    margin-left: 0px;
+    p
+}
+/* Style for the menu items on hover */
+.item-opt:hover {
+    background-color: rgb(80, 81, 99);
+}

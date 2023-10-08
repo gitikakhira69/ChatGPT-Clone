@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="left-pane" id="leftPane">
+            <div class="new-chat-input-container">
+                <button class="new-chat-button" id="new-chat-button" onclick="createNewChat()">
+                    <i class="fas fa-plus"></i> <!-- FontAwesome icon for adding a new chat -->
+                    New Chat
+                </button>
+                <button class="hide-button hide-button-container" onclick="toggleLeftPane()" id="hideButton" >
+                    <img src="images/sidebar.png" width="15px" height="15px" > 
+                </button>
+            </div>
+            <div class="existing-chats" id="existing-chats">
+                <!-- Dummy chat list goes here -->
+                <div class="today">Today</div>
+                <div class="chat"><img src="images/message.png" alt="icon">New Chat</div>
+                <div class="chat"><img src="images/message.png" alt="icon">New Chat</div>
+                <div class="chat"><img src="images/message.png" alt="icon">New Chat</div>
+            </div>
+           
+            <div class="profile-section">
+                <div class="upgrade">
+                    <img src="images/person.png" width="23px" height="23px">
+                    <p>Upgrade to Plus</p>
+                </div>
+                <div class="username">
+                    <img src="images/profile.png" alt="Profile Image" class="profile-image" width="10px" height="10px">
+                    <h3 class="profile-name">gitikakhira@gmail.com</h3>
+                    <div class="options-icon" id="optionsIcon">...</div>
+                    <div class="options" id="optionsMenu">
+                        <div class="item-opt"><img src="images/custom.png" width="15px" height="15px">Custom instructions</div>
+                        <div class="item-opt"><img src="images/settings.png" width="15px" height="15px">Settings</div>
+                        <div class="item-opt" id="log"><img src="images/logout.png" width="15px" height="15px">Logout</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- ... (previous HTML code) -->
+        <div id="top-left-container" class="top"  class="hide-button-top">
+           <img src="images/sidebar.png" alt="Close" width="20px" height="20px" id="hideButtonTop">
+          
+        </div>
+        
+            
+        
+        <div class="right-pane">
+            
+            <div class="top-buttons">
+                <button class="floating-button green-button" id="float">
+                    <img src="images/star.png" width="50px" height="45px" class="star">
+                    GPT-4 
+                    <img src="images/lock.png" width="25px" height="23px" class="lock">
+                </button>
+                <button class="floating-button" id="button2" >
+                    <img src="images/thunder1.png" width="20px" height="15px" class="thun">
+                    GPT-3.5 
+                </button>
+                
+            </div>
+            
+            <div class="chatgpt-name">
+                <p>ChatGPT</p>
+            </div>
+            <div class="message-area">
+                <div class="message">
+
+                </div>
+            </div>
+            <div class="message-container">
+                <div class="column left-column">
+                    <!-- Two boxes on the left side in a column -->
+                    <div class="message-box left-box">Suggest fun activites</div>
+                    
+                    <div class="message-box left-box">Design a databasee schema</div>
+                </div>
+                <div class="column right-column">
+                    <!-- Two boxes on the right side in a column -->
+                    <div class="message-box right-box">Tell me a fun fact</div>
+                    <div class="message-box right-box">What is AI</div>
+                </div>
+                
+            </div>
+            <div class="reload" id="regen">
+                <img src="images/reload.png" alt="reload" width="15px" height="15px">
+                Regenarate
+            </div>
+            
+            <div class="bottom-input">
+                <input type="text" placeholder="Type a message" class="message-input">
+                <button class="send-button send-button-container" >
+                    <img src="/images/send-message.jpg" width="36px" height="42px">
+                    <div class="tooltip-text">Send Message</div>
+                    
+                </button>
+                
+            </div>
+            <p class="site">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts.<a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank"> ChatGPT September 25 Version<a></p>
+           
+        </div>
+
+        <div class="share">
+            <img src="images/share.png" alt="image" height="20px">
+        </div>
+        <div class="menu-container"></div>
+            
+                <button class="question-icon" id="questionMark">
+                    <img src="images/question.png" alt="que">
+                </button>
+            
+            <div class="dropdown" id="dropdown">
+                <div class="menu-item" ><img src="images/external-link.png" width="15px" style="padding-right: 5px;"><a href="https://help.openai.com/en/collections/3742473-chatgpt" target="_blank" >Help & FAQ</a></div>
+                <div class="menu-item"><img src="images/external-link.png" width="15px" style="padding-right: 5px;"><a href="https://openai.com/policies" >Terms & policies</a></div>
+                <div class="menu-item"><img src="images/key.png" width="15px" style="padding-right: 5px;">Keyboard shortcuts</div>
+            </div>
+        </div>
+    </div>
+    
+<!-- ... (remaining HTML code) -->
+
+    <script src="script.js"></script>
+</body>
+</html>
